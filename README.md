@@ -11,8 +11,10 @@
 	Puis il peut afficher son trajet sur une carte.
 	
 	Le projet était hebergé sur un autre GIT (interne à l'IUT), il est normal qu'il n'y ait pas plus de commit.
-	La version en production se trouve ici : https://play.google.com/store/apps/details?id=projet.iutlp.projet_objectifssportifs
-	N'hésitez pas à me contacter pour toutes questions : gassddr@gmail.com
+	
+### Version en production : https://play.google.com/store/apps/details?id=projet.iutlp.projet_objectifssportifs
+
+### Me contacter : gassddr@gmail.com
 
 
 ## Fonctionnalité et outils mis en place : 
