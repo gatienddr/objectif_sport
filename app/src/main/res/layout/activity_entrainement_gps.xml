@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pages.EntrainementGps">
+
+    <com.ebanx.swipebtn.SwipeButton
+        android:id="@+id/swipeEntGps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        app:button_bottom_padding="20dp"
+        app:button_top_padding="20dp"
+        app:button_trail_drawable="@drawable/shape_rounded"
+        app:button_background="@color/colorGreen"
+        app:button_image_disabled="@drawable/ic_baseline_trending_flat_24"
+        app:button_image_enabled="@drawable/ic_baseline_miscellaneous_services_24"
+        app:button_left_padding="20dp"
+        app:button_right_padding="20dp"
+        app:inner_text="Lancer l'entrainement"
+        app:inner_text_background="@drawable/shape_rounded"
+        app:inner_text_bottom_padding="18dp"
+        app:inner_text_color="@color/colorWhite"
+        app:inner_text_size="20sp"
+        android:layout_centerInParent="true"
+
+
+        app:inner_text_top_padding="18dp" />
+
+    <TextView
+        android:id="@+id/textViewChrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/txtViewAltitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewChrono"></TextView>
+
+    <TextView
+        android:id="@+id/textViewVitesse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewAltitude"></TextView>
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewVitesse"></TextView>
+
+
+</RelativeLayout>

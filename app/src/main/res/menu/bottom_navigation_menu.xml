@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    Menu gerant les icones de la bar de navigation
+    -->
+
+    <item
+        android:id="@+id/page_objectifs"
+        android:enabled="true"
+        android:icon="@drawable/ic_date_range_24px"
+        android:title="objectifs"/>
+    <item
+    android:id="@+id/page_entrainements"
+    android:enabled="true"
+    android:icon="@drawable/ic_fitness_center_24px"
+    android:title="entrainements"/>
+
+    <item
+        android:id="@+id/page_sports"
+        android:enabled="true"
+        android:icon="@drawable/ic_sports_football_24px"
+        android:title="sports"/>
+
+</menu>

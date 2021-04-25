@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/titreSportEnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/le_sport"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_sportEntGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreSportEnt"
+        />
+
+    <TextView
+        android:id="@+id/txtViewDistanceGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/spinner_sportEntGPS"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/txtViewTempsGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="lala"
+        android:layout_below="@id/txtViewDistanceGPS"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/buttonValideEntGPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valider"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtViewTempsGPS"
+        ></Button>
+
+
+
+
+</RelativeLayout>

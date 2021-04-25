@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:id="@+id/demarrerEntrainement"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/ic_rugby_fan_with_an_encouraging_signal_with_word_go"
+            android:layout_marginLeft="0dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/demarrerEntrainement"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Demarrer_ent"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/addObjectif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ajouter"></TextView>
+        <ImageView
+            android:id="@+id/ajoutObjectif"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_date_range_24px"
+            android:layout_below="@+id/addObjectif"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ajoutObjectif"
+            android:layout_alignParentLeft="true"
+            android:text="@string/ajout_objectif"></TextView>
+        <TextView
+            android:id="@+id/addEnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+            android:text="@string/ajouter"></TextView>
+
+        <ImageView
+            android:id="@+id/ajoutEntrainemente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/addEnt"
+            android:background="@drawable/ic_fitness_center_24px"
+            android:scaleType="fitXY"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ajoutEntrainemente"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ajout_entrainement"></TextView>
+
+        <TextView
+            android:id="@+id/addSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/ajouter"></TextView>
+
+        <ImageView
+            android:id="@+id/ajoutSport"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/addSport"
+            android:background="@drawable/ic_sports_football_24px"
+            android:scaleType="fitXY"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ajoutEntrainemente"
+            android:layout_alignParentRight="true"
+            android:text="@string/ajout_sport"></TextView>
+    </RelativeLayout>
+
+
+</LinearLayout>

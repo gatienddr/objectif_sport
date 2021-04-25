@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Objectif sport</string>
+
+    <string name="title_activity_ajout_objectif">ajoutObjectif</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="temps_objectif">10:00</string>
+    <string name="distance_objectif">50000</string>
+    <string name="distance_entrainement">10000</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="nouvel_objectif">Nouvel objectif</string>
+    <string name="ajouter_entrainement">Ajouter entrainement</string>
+    <string name="le_sport">Le sport</string>
+
+    <string name="date_debut_objectif">Date de début de l\'objectif</string>
+    <string name="date_entrainement">Date de l\'entrainement</string>
+
+
+    <string name="date_du_jour">date du jour</string>
+    <string name="Date_de_fin_de_lobjectif">Date de fin de l\'objectif</string>
+
+    <string name="Distance">Distance</string>
+    <string name="Temps">Temps</string>
+
+    <string name="Demarrer_ent">Demarrer entrainement</string>
+
+    <string name="heures">Heures :</string>
+    <string name="minutes">Minutes :</string>
+    <string name="snackBarAlerteDate">La date de début ne peut être après la date de fin</string>
+    <string name="snackBarAlerteDistance">Distance au mauvais format, reset à 50 0000</string>
+    <string name="title_activity_ajout_activites">FullscreenActivity</string>
+    <string name="title_activity_ajout_entrainement">FullscreenActivity</string>
+
+    <string name="alertePasDeSport">Veuillez ajouter les sports que vous pratiquez avant tout (logo ballon de la fenêtre menu)</string>
+
+    <string name="titreAlerteGpsPasActif">GPS innactif</string>
+    <string name="alerteGpsPasActif">Activez le GPS du téléphone (pas obligatoire si vous voulez mesurez juste le temps) </string>
+
+    <string name="ouiChef">oui chef</string>
+
+    <string name="ajout_sport">un sport</string>
+    <string name="ajout_objectif">un objectif</string>
+    <string name="ajout_entrainement">un entraînement</string>
+
+
+    <string name="valider">Valider</string>
+
+    <string name="supprimer">Supprimer</string>
+    <string name="modifier">Modifier</string>
+
+    <string name="modif_objectif">Modifier un objectif</string>
+
+    <string name="alerteSuppressionObjectif">Souhaitez vous supprimer l\'objectif ?</string>
+
+    <string name="attention">Attention</string>
+
+    <string name="non">non</string>
+
+    <string name="modifier_entrainement">Modifier entraînement</string>
+
+
+</resources>

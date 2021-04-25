@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.AjoutObjectif">
+
+    <TextView
+        android:id="@+id/txtViewObjectif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/nouvel_objectif"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/titreSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewObjectif"
+        android:text="@string/le_sport"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_sport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreSport"
+        />
+
+
+    <TextView
+        android:id="@+id/txtDateDeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_sport"
+        android:text="@string/date_debut_objectif"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/viewDateDeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDateDeb"
+        android:text="@string/date_du_jour"
+        android:textSize="20dp" />
+
+
+<!--
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/modifierDateDeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_baseline_settings_24"
+        app:tint="@color/colorWhite"
+        android:layout_below="@+id/txtDateDeb"
+        android:layout_alignParentRight="true"
+        app:backgroundTint="@color/colorPrimary"
+        tools:visibility="visible" />
+        -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/modifierDateDeb"
+        android:layout_below="@id/txtDateDeb"
+        android:layout_alignParentRight="true"
+        style="@style/fabStyleParameters"
+        />
+
+    <DatePicker
+        android:id="@+id/dpDateDeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifierDateDeb"
+        android:calendarViewShown="false"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:datePickerMode="spinner"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bValideDateDeb"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/modifierDateDeb"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/dpDateDeb"
+        android:background="@drawable/ic_event_available_black_24dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txtDateFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dpDateDeb"
+        android:text="@string/Date_de_fin_de_lobjectif"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/viewDateFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDateFin"
+        android:textSize="20dp" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/modifierDateFin"
+        android:layout_below="@id/txtDateFin"
+        android:layout_alignParentRight="true"
+        style="@style/fabStyleParameters"
+         />
+
+    <DatePicker
+        android:id="@+id/dpDateFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifierDateFin"
+        android:calendarViewShown="false"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:datePickerMode="spinner"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bValideDateFin"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/modifierDateFin"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/dpDateFin"
+        android:background="@drawable/ic_event_available_black_24dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/titreDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dpDateFin"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/Distance" />
+
+    <Button
+        android:id="@+id/bLessDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreDistance"
+        android:background="@drawable/ic_baseline_horizontal_rule_24"
+         />
+
+    <EditText
+        android:id="@+id/editDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@id/bLessDistance"
+        android:inputType="textPersonName"
+        android:layout_below="@id/titreDistance"
+        android:hint="distance en mètres"
+        android:text="@string/distance_objectif" />
+
+
+    <Button
+        android:id="@+id/bAddDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreDistance"
+        android:background="@drawable/ic_baseline_add_24"
+        android:layout_toRightOf="@id/editDistance"
+        />
+
+    <TextView
+        android:id="@+id/titreTemps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bAddDistance"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/Temps" />
+
+
+
+
+
+
+
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bAddDistance"></Space>
+
+
+    <TextView
+        android:id="@+id/txtHeures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreTemps"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/npTempsHours"
+        android:text="@string/heures"/>
+
+    <NumberPicker
+        android:id="@+id/npTempsHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAddDistance"
+        android:layout_toLeftOf="@id/space"
+        ></NumberPicker>
+
+    <TextView
+        android:id="@+id/txtMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreTemps"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/space"
+        android:text="@string/minutes"/>
+
+    <NumberPicker
+        android:id="@+id/npTempsMinutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAddDistance"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/txtMinutes"
+        ></NumberPicker>
+
+    <Button
+        android:id="@+id/bAjoutObjectif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/npTempsHours"
+        android:text="@string/ajouter"
+        app:backgroundTint="@color/colorPrimary"
+        />
+
+
+
+
+
+
+</RelativeLayout>

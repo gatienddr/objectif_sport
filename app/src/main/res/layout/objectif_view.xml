@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+    <!--
+   xml correspondant a la recycler view des objectifs
+   Material card view pour un affichage plus beau
+   -->
+
+
+    <com.google.android.material.card.MaterialCardView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true">
+
+        <!--
+        Linear layout pour organiser au sein de la card view
+         -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/dateDebut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="objectifView" />
+
+            <TextView
+                android:id="@+id/dateFin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="objectifView" />
+
+
+            <TextView
+                android:id="@+id/distanceObjectif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="objectifView" />
+
+            <TextView
+                android:id="@+id/distancePourcentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="objectifView" />
+
+            <ProgressBar
+                android:id="@+id/progressPourcentageDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                ></ProgressBar>
+
+            <TextView
+                android:id="@+id/tempsObjectif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressPourcentageTemps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                ></ProgressBar>
+
+            <TextView
+                android:id="@+id/tempsPourcentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="objectifView" />
+
+            <TextView
+                android:id="@+id/sportObjectif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>
+

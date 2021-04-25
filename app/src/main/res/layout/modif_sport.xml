@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtViewAjoutSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:text="Nouveau sport"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimary"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/sportSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtViewAjoutSport"
+        android:hint="Modifier le nom" />
+
+    <TextView
+        android:id="@+id/sportMetre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_below="@+id/sportSearch"
+        android:text="Mesurable en :" />
+
+    <Switch
+        android:id="@+id/switchDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sportMetre"
+        android:textSize="30dp"
+        android:text="distance" />
+
+
+    <Switch
+        android:id="@+id/switchTemps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchDistance"
+        android:textSize="30dp"
+        android:text="temps" />
+
+
+    <Button
+        android:id="@+id/boutonModifSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/modifier"
+        android:layout_below="@+id/switchTemps"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/barNav"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boutonModifSport"
+        android:text="@string/supprimer"
+        android:backgroundTint="@color/colortRed"
+        app:backgroundTint="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        ></com.google.android.material.button.MaterialButton>
+
+
+
+
+
+</RelativeLayout>

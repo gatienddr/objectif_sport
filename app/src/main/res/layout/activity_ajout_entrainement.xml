@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pages.AjoutObjectif">
+
+    <TextView
+        android:id="@+id/txtViewEnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/ajouter_entrainement"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/titreSportEnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtViewEnt"
+        android:text="@string/le_sport"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner_sportEnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreSportEnt"
+        />
+
+
+    <TextView
+        android:id="@+id/txtDateEnt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_sportEnt"
+        android:text="@string/date_entrainement"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/viewDateEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDateEnt"
+        android:textSize="20dp" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/modifierDateEnt"
+        android:layout_below="@+id/txtDateEnt"
+        android:layout_alignParentRight="true"
+        style="@style/fabStyleParameters"
+        />
+
+    <DatePicker
+        android:id="@+id/dpDateEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modifierDateEnt"
+        android:calendarViewShown="false"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:datePickerMode="spinner"
+        android:nestedScrollingEnabled="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bValideDateEnt"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/modifierDateEnt"
+        android:layout_marginTop="80dp"
+        android:layout_toRightOf="@id/dpDateEnt"
+        android:background="@drawable/ic_event_available_black_24dp"
+        android:visibility="gone" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/titreDistanceEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dpDateEnt"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/Distance" />
+
+    <Button
+        android:id="@+id/bLessDistanceEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreDistanceEnt"
+        android:background="@drawable/ic_baseline_horizontal_rule_24"
+        />
+
+    <EditText
+        android:id="@+id/editDistanceEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_toRightOf="@id/bLessDistanceEnt"
+        android:inputType="textPersonName"
+        android:layout_below="@id/titreDistanceEnt"
+        android:hint="distance en mètres"
+        android:text="@string/distance_entrainement" />
+
+
+    <Button
+        android:id="@+id/bAddDistanceEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titreDistanceEnt"
+        android:background="@drawable/ic_baseline_add_24"
+        android:layout_toRightOf="@id/editDistanceEnt"
+        />
+
+    <TextView
+        android:id="@+id/titreTempsEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bAddDistanceEnt"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/Temps" />
+
+
+
+    <Space
+        android:id="@+id/spaceEnt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/bAddDistanceEnt"></Space>
+
+
+    <TextView
+        android:id="@+id/txtHeuresEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreTempsEnt"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@id/npTempsHoursEnt"
+        android:text="@string/heures"/>
+
+    <NumberPicker
+        android:id="@+id/npTempsHoursEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAddDistanceEnt"
+        android:layout_toLeftOf="@id/spaceEnt"
+        ></NumberPicker>
+
+    <TextView
+        android:id="@+id/txtMinutesEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titreTempsEnt"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/spaceEnt"
+        android:text="@string/minutes"/>
+
+    <NumberPicker
+        android:id="@+id/npTempsMinutesEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bAddDistanceEnt"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/txtMinutesEnt"
+        ></NumberPicker>
+
+    <Button
+        android:id="@+id/bAjoutEnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/npTempsHoursEnt"
+        android:text="@string/ajouter"
+        app:backgroundTint="@color/colorPrimary"
+        />
+
+
+
+</RelativeLayout>
